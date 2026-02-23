@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -13,5 +15,72 @@ body {
 }
 
 .content-box {
-  background-color: lightblue;
+  background-color: #FAF9F6;
+  padding-block: 100px;
+  padding-inline: 50px;
+  border-radius: 20px;
+  box-shadow: -8px 8px 20px 5px #aaaaaa;
+}
+
+.sign-in-box, .create-account-box {
+  text-align: center;
+  width: 250px;
+}
+
+input[type="submit"] {
+  background-color: #FD4B35;
+  color: #E6C9D8;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding-block: 10px;
+  padding-inline: 20px;
+  
+  transition: 500ms ease;
+}
+
+input[type="submit"]:hover {
+  color: #FD4B35;
+  background-color: white;
+  transition: 500ms ease;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+  border: none;
+  padding-block: 10px;
+  padding-inline: 5px;
+  width: 100%;
+  margin-block-end: 20px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="button"] {
+  all: unset;
+  color: grey;
+  margin-block-end: 20px;
+  cursor: pointer;
+}
+
+h1 {
+  margin-block-end: 15px;
+}
+
+h5 {
+  color: grey;
+  margin-block-end: 10px;
+  font-weight: 100;
+}
+
+.icons > img {
+  width: 32px;
+  padding-block: 5px;
+  padding-inline: 5px;
+  margin-block-end: 5px;
+  margin-inline: 10px;
+  filter: invert(40%);
+  cursor: pointer;
 }
