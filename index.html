@@ -19,22 +19,22 @@
         </div>
         <h5>or use your account</h5>
         <form action="">
-          <input type="email" id="email" placeholder="Email"><br>
+          <input type="email" id="email" placeholder="Email" autocomplete="email"><br>
           <input type="password" id="password" placeholder="Password"><br>
-          <input type="button" value="Forgot your password?"><br>
+          <input type="button" value="Forgot your password?" autocomplete="off"><br>
           <input type="submit" value="SIGN IN">
         </form>
       </div>
     
-      <div class="counter-box">
+      <div class="counter-box left">
         <h1>Hello, Friend!</h1>
-        <h4>Enter your personal details and start your journey with us</h4>
-        <button class="switch-btn">SIGN UP</button>
+        <h4>Enter your personal details and start your journey with us! If you already have an account</h4>
+        <button class="switch-btn">SIGN IN</button>
       </div>
 
 
 
-      <!-- next the register form  
+      <!-- next the register form -->
       <div class="create-account-box">
         <h1>Create account</h1>
         <div class="icons">
@@ -44,14 +44,16 @@
         </div>
         <h5>or use your email for registration</h5>
         <form action="">
-          <input type="text" id="name" placeholder="Name"><br>
-          <input type="email" id="email" placeholder="Email"><br>
-          <input type="password" id="password" placeholder="Password"><br>
+          <input type="text" id="name" placeholder="Name" autocomplete="given-name"><br>
+          <input type="email" id="email" placeholder="Email" autocomplete="email"><br>
+          <input type="password" id="password" placeholder="Password" autocomplete="off"><br>
           <input type="submit" value="SIGN UP">
         </form>
       </div>
-    -->
+
     </div>
   </div>
+
+<script src="script/script.js" defer></script>
 </body>
 </html>

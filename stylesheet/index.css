@@ -27,16 +27,32 @@
 }
 
 .counter-box {
+  text-align: center;
   background: linear-gradient(45deg, #FD492D, #FE4349);
   color: white;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  height: 100%;
+  padding-inline: 50px;
+  height: 500px;
+  width: 375px;
+  position: absolute;
+  z-index: 1;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 500ms ease;
+}
+
+.right {
+  margin-left: 375px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.left {
+  margin-left: -375px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .switch-btn {
@@ -59,7 +75,7 @@
   background-color: white;
 }
 
-.sign-in-box, .create-account-box, .counter-box {
+.sign-in-box, .create-account-box {
   text-align: center;
   width: 50%;
   padding-inline: 50px;
@@ -85,16 +101,12 @@ input[type="submit"]:hover {
 }
 
 input[type="email"], input[type="password"], input[type="text"] {
+  border: none;
+  border-bottom: 1px solid grey;
   padding-block: 10px;
   padding-inline: 5px;
   width: 100%;
   margin-block-end: 20px;
-}
-
-input[type="email"], input[type="password"] {
-  border: none;
-
-  border-bottom: 1px solid grey;
 }
 
 input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus {
