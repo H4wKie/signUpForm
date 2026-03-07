@@ -55,7 +55,7 @@
   border-bottom-left-radius: 20px;
 }
 
-.switch-btn {
+.switch-btn-pc {
   all: unset;
   background-color: transparent;
   border: 2px solid white;
@@ -70,7 +70,7 @@
   transition: 250ms ease;
 }
 
-.switch-btn:hover {
+.switch-btn-pc:hover {
   color: #FE4349;
   background-color: white;
 }
@@ -143,4 +143,33 @@ h5 {
   margin-inline: 10px;
   filter: invert(40%);
   cursor: pointer;
+}
+
+.mobile-form-footer {
+  padding-block-start: 20px;
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.mobile-form-footer > h5 {
+  padding-block: 10px;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.switch-btn-mobile {
+  all: unset;
+  color: grey;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline;
+  padding-inline: 10px;
+  padding-block: 10px;
+}
+
+.hidden {
+  display: none;
 }

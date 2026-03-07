@@ -1,0 +1,26 @@
+@media (max-width: 800px) {
+  .content-box {
+    width: 100%;
+    margin-inline: 20px;
+    flex-direction: column;
+  }
+  .sign-in-box, .create-account-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .sign-in-box, .create-account-box {
+    padding-inline: 40px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  .sign-in-box, .create-account-box {
+    padding-inline: 30px;
+  }
+}
